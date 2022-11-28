@@ -26,7 +26,7 @@ export default function Signup() {
     }
     setLoading(false);
   }
-
+  console.log(error);
   return (
     <>
       <Card>
