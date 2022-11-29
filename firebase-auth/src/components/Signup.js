@@ -21,12 +21,13 @@ export default function Signup() {
       setError("");
       setLoading(true);
       await signup(emailRef.current.value, passwordRef.current.value);
-    } catch {
+    } catch (error) {
       setError("Failed to create an account");
+      console.log(error);
     }
     setLoading(false);
   }
-  console.log(error);
+
   return (
     <>
       <Card>
