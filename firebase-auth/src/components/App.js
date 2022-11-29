@@ -17,13 +17,13 @@ function App() {
           <Router>
             <AuthProvider>
               <Routes>
-                <Route path="/" element={<Dashboard />} exact />
+                <Route path="/" element={<Dashboard />} />
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/login" element={<Login />} />
               </Routes>
             </AuthProvider>
           </Router>
-          <Signup />
+          {/* <Signup /> */}
         </div>
       </Container>
     </AuthProvider>
